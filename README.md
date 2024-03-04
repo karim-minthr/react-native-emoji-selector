@@ -21,7 +21,7 @@ import EmojiSelector from 'react-native-emoji-selector'
 ### Basic usage
 
 ```jsx
-<EmojiSelector onEmojiSelected={emoji => console.log(emoji)} />
+
 ```
 
 ### Setting a default category
@@ -31,10 +31,7 @@ If you'd like to define a different default category, you can import the `Catego
 ```jsx
 import EmojiSelector, { Categories } from "react-native-emoji-selector";
 
-<EmojiSelector
-  category={Categories.symbols}
-  onEmojiSelected={emoji => console.log(emoji)}
-/>;
+<EmojiSelector category={Categories.symbols} />;
 ```
 
 The available categories are `all`, `emotion`, `people`, `nature`, `food`, `activities`, `places`, `objects`, `symbols`, and `flags`.
